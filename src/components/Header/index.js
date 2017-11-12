@@ -1,9 +1,14 @@
 import * as React from 'react';
+import './styles.css';
 
 export class Header extends React.Component {
   render() {
-    return (
-      <p>Hello, { this.props.name }!</p>
+    return (  
+      <header className="header">
+        <h1>
+          strongly typed
+        </h1>
+      </header>
     );
   }
 }
