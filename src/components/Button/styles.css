@@ -24,19 +24,41 @@
 }
 
 .button-caution::before {
-    content: "!";
+    content: "😱";
     display: inline-block;
-    color: #fff;
-    border: solid 2px #fff;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
-    line-height: 22px;
+    margin-right: 0.25em;
+}
+
+.button-special {
     font-weight: bold;
-    vertical-align: middle;
-    margin-right: 5px;
-    transform: translateY(-3px);
-    opacity: 0.7;
+    animation-duration: 1.5s;
+    animation-name: button-special-keyframes;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-image: linear-gradient(to bottom right, pink, orange, yellow, greenyellow, lightskyblue, lightskyblue, greenyellow, yellow, orange, pink);
+    background-size: 200%;
+}
+
+@keyframes button-special-keyframes {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;     
+    }
+}
+
+.button-special::before, .button-special::after {
+    content: "💖";
+    display: inline-block;
+}
+
+.button-special::before {
+    margin-right: 0.25em;
+}
+
+.button-special::after {
+    margin-left: 0.25em;
 }

@@ -24,3 +24,13 @@ stories.add('caution', () => {
     />
   );
 });
+
+stories.add('special', () => {
+  return (
+    <Button
+      type={ BUTTON_TYPES.SPECIAL }
+      content="Party"
+      onClick={ action('clicked special button') }
+    />
+  );
+});
