@@ -19,7 +19,7 @@ stories.add('caution', () => {
   return (
     <Button
       type={ BUTTON_TYPES.CAUTION }
-      content="Delete Account"
+      content="Delete"
       onClick={ action('clicked caution button') }
     />
   );
