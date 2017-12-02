@@ -6,7 +6,7 @@ export class Header extends React.Component {
     return (  
       <header className="header">
         <h1>
-          strongly typed
+          { this.props.content }
         </h1>
       </header>
     );
