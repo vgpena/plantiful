@@ -10,7 +10,7 @@ export const BUTTON_TYPES = {
 export class Button extends React.Component {
   render() {
     return (
-      <button class={ this.props.type || BUTTON_TYPES.DEFAULT } onClick={ this.props.onClick }>
+      <button className={ this.props.type || BUTTON_TYPES.DEFAULT } onClick={ this.props.onClick }>
         { this.props.content }
       </button>
     );
