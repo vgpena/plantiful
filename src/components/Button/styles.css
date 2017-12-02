@@ -4,15 +4,24 @@
     border: none;
     padding: 0.25em 0.5em;
     border-radius: 5px;
-    cursor: pointer;
-    transition-property: transform box-shadow;
-    transition-duration: 0.2s;
-    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
+    color: #000;
 }
 
-.button:hover, .button:focus {
+.button:not(:disabled) {
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;   
+    transition-property: transform box-shadow;
+    transition-duration: 0.2s;
+    cursor: pointer;    
+}
+
+.button:not(:disabled):hover, .button:not(:disabled):focus {
     transform: translateY(-2px);
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px;
+}
+
+.button:disabled {
+    color: #000;
+    opacity: 0.6;
 }
 
 .button-default {
@@ -31,13 +40,16 @@
 
 .button-special {
     font-weight: bold;
+    background-image: linear-gradient(to bottom right, pink, orange, yellow, greenyellow, lightskyblue, lightskyblue, greenyellow, yellow, orange, pink);
+    background-size: 200%;
+}
+
+.button-special:not(:disabled) {
     animation-duration: 1.5s;
     animation-name: button-special-keyframes;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    background-image: linear-gradient(to bottom right, pink, orange, yellow, greenyellow, lightskyblue, lightskyblue, greenyellow, yellow, orange, pink);
-    background-size: 200%;
 }
 
 @keyframes button-special-keyframes {

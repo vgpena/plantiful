@@ -15,6 +15,16 @@ stories.add('default', () => {
   );
 });
 
+stories.add('default + disabled', () => {
+  return (
+    <Button
+      content="Save"
+      onClick={ action('clicked default button') }
+      disabled      
+    />
+  );
+});
+
 stories.add('caution', () => {
   return (
     <Button
@@ -25,12 +35,34 @@ stories.add('caution', () => {
   );
 });
 
+stories.add('caution + disabled', () => {
+  return (
+    <Button
+      type={ BUTTON_TYPES.CAUTION }
+      content="Delete"
+      onClick={ action('clicked caution button') }
+      disabled
+    />
+  );
+});
+
 stories.add('special', () => {
   return (
     <Button
       type={ BUTTON_TYPES.SPECIAL }
       content="Party"
       onClick={ action('clicked special button') }
+    />
+  );
+});
+
+stories.add('special + disabled', () => {
+  return (
+    <Button
+      type={ BUTTON_TYPES.SPECIAL }
+      content="Party"
+      onClick={ action('clicked special button') }
+      disabled
     />
   );
 });
