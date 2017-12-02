@@ -22,8 +22,7 @@ function replaceName(inFile, outFile) {
   const writer = fs.createWriteStream(outFile, 'utf8');
 
   reader.on('data', (data) => {
-    writer.write(data.replace('/* tslint:disable */\n', ''
-).replace(/{{name}}/g, componentUsableName));
+    writer.write(data.replace(/{{name}}/g, componentUsableName));
   });
 }
 

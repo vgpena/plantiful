@@ -1,0 +1,17 @@
+.button {
+    font-family: "Helvetica", sans-serif;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(87, 166, 255);
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: transform box-shadow;
+    transition-duration: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
+}
+
+.button:hover, .button:focus {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px;
+}
