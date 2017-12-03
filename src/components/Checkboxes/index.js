@@ -13,8 +13,8 @@ export class Checkboxes extends React.Component {
           {
             this.props.options.map((option) => {
               return (
-                <div>
-                  <label for={ option } className="label-checkbox">
+                <div key={ option }>
+                  <label htmlFor={ option } className="label-checkbox">
                     { option }
                   </label>
                   <input type="checkbox" value={ option } id={ option } />
