@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export const BUTTON_TYPES = {
@@ -19,3 +20,8 @@ export class Button extends React.Component {
     );
   }
 }
+
+Button.propTypes = {
+  content: PropTypes.string,
+  type: PropTypes.oneOf(Object.values(BUTTON_TYPES)),
+};

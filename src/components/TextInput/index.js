@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class TextInput extends React.Component {
@@ -12,4 +13,9 @@ export class TextInput extends React.Component {
       </div>
     );
   }
+}
+
+TextInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class DropdownInput extends React.Component {
@@ -22,4 +23,10 @@ export class DropdownInput extends React.Component {
       </div>
     );
   }
+}
+
+DropdownInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  choices: PropTypes.arrayOf(PropTypes.string).isRequired,
 }

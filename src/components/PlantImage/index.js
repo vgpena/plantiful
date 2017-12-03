@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class PlantImage extends React.Component {
@@ -7,4 +8,8 @@ export class PlantImage extends React.Component {
       <div className="plant-image" style={{ 'background-image': `url(${ this.props.imageUrl })` }} />
     );
   }
+}
+
+PlantImage.propTypes = {
+  imageUrl: PropTypes.string,
 }

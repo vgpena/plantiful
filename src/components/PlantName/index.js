@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class PlantName extends React.Component {
@@ -9,4 +10,8 @@ export class PlantName extends React.Component {
       </h2>
     );
   }
+}
+
+PlantName.propTypes = {
+  name: PropTypes.string.isRequired,
 }

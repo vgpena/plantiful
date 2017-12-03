@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class Checkboxes extends React.Component {
@@ -23,4 +24,10 @@ export class Checkboxes extends React.Component {
       </fieldset>
     );
   }
+}
+
+Checkboxes.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
 }

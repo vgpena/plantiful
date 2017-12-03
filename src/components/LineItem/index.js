@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class LineItem extends React.Component {
@@ -14,4 +15,9 @@ export class LineItem extends React.Component {
       </tr>
     );
   }
+}
+
+LineItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 }

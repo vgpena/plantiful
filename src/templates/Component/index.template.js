@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export class {{name}} extends React.Component {
@@ -8,3 +9,7 @@ export class {{name}} extends React.Component {
     );
   }
 }
+
+{{name}}.propTypes = {
+  name: PropTypes.string,
+};
