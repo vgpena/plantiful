@@ -12,7 +12,7 @@ export class Plant extends React.Component {
       <div>
         <PlantName name={ this.props.name } />
         <PlantImage imageUrl={ this.props.image } />
-        <table>
+        <table className="plant-stats">
           <tbody>
             {
               this.props.stats.map((stat) => {
