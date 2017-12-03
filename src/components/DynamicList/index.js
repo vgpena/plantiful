@@ -66,7 +66,3 @@ export class DynamicList extends React.Component {
     );
   }
 }
-
-DynamicList.propTypes = {
-  name: PropTypes.string,
-};
