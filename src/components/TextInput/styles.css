@@ -18,4 +18,5 @@
     font-size: 1.5rem;
     border: none;
     border-bottom: solid 3px var(--text);
+    background-color: transparent;
 }

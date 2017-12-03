@@ -6,7 +6,7 @@ import { SiteTitle } from '../SiteTitle';
 import { DynamicList } from '../DynamicList';
 import { Button } from '../Button';
 
-export class App extends React.Component {
+export class Body extends React.Component {
   render() {
     return (
       <div className="app">

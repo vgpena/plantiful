@@ -49,7 +49,7 @@ export class DynamicList extends React.Component {
   }
 
   downloadPlants() {
-    print();
+    window.print();
   }
   
   render() {

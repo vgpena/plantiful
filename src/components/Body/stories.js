@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { App } from './';
+import { Body } from './';
 
-const stories = storiesOf('App', {});
+const stories = storiesOf('Body', {});
 
 stories.add('default', () => {
-  return <App name="App" />;
+  return <Body />;
 });
