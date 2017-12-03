@@ -28,7 +28,6 @@ export class DynamicList extends React.Component {
   savePlant(data) {
     const plants = this.state.plants;
     plants.push(data);
-    console.log(plants);
     this.setState({
       plants: plants,
       editing: false,
