@@ -6,6 +6,14 @@ import { Plant } from '../Plant';
 
 export class PlantList extends React.Component {
   render() {
+    if (!this.props.plants || this.props.plants.length === 0) {
+      return (
+        <p className="plant-list-empty">
+          No plants yet. Click the button below to add some!
+        </p>
+      );
+    }
+
     return (
       <ul className="plant-list">
         {
@@ -24,5 +32,5 @@ export class PlantList extends React.Component {
 }
 
 PlantList.propTypes = {
-  plants: PropTypes.arrayOf(PropTypes.object).isRequired,
+  plants: PropTypes.arrayOf(PropTypes.object),
 };

@@ -17,6 +17,7 @@ export class DynamicList extends React.Component {
     
     this.state = {
       plants: [],
+      hasPlants: false,
       editing: false,
     }
   }
@@ -31,6 +32,7 @@ export class DynamicList extends React.Component {
     const plants = this.state.plants;
     plants.push(data);
     this.setState({
+      hasPlants: true,
       plants: plants,
       editing: false,
     });
@@ -44,6 +46,7 @@ export class DynamicList extends React.Component {
 
   clearList() {
     this.setState({
+      hasPlants: false,
       plants: [],
     });
   }
@@ -56,7 +59,7 @@ export class DynamicList extends React.Component {
     return (
       <div>
         {
-          this.state.plants.length > 0 &&
+          (!this.state.editing || this.state.hasPlants) &&
           <PlantList plants={ this.state.plants } />
         }
         {
@@ -77,7 +80,7 @@ export class DynamicList extends React.Component {
           </div>
         }
         {
-          (!this.state.editing && this.state.plants.length > 0) &&
+          (!this.state.editing && this.state.hasPlants) &&
           <div className="dynamic-list-buttons button-wrap hide-in-print">
             <Button
               type={ BUTTON_TYPES.DANGER }

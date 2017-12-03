@@ -1,8 +1,13 @@
-.plant-list {
+.plant-list, .plant-list-empty {
     margin: 0 0 4em 0;
     padding: 0;
 }
 
 .plant-list-item {
     list-style-type: none;
+    margin-top: 4rem;
+}
+
+.plant-list-empty {
+    font-family: var(--body);
 }

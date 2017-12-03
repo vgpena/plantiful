@@ -35,3 +35,7 @@ stories.add('default', () => {
     />
   );
 });
+
+stories.add('empty', () => {
+  return <PlantList />;
+});
