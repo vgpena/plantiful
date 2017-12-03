@@ -6,6 +6,7 @@ html {
     --button-no: rgb(160, 50, 61);
     --button-fn: #333;
     --green: rgb(93, 182, 130);
+    --light: #fff;    
     --titles: "Lydian", "Georgia", serif;
     --body: "Fira Mono", monospace;
     --util: "Helvetica Neue", "Arial", sans-serif;

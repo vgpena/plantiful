@@ -1,0 +1,12 @@
+.image-drag-and-drop {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--light);
+    font-family: var(--body);
+    color: var(--text);
+    text-align: center;
+    line-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
