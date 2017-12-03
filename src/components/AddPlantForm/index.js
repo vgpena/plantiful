@@ -45,6 +45,7 @@ function serializeForm() {
   let imageID = null;
   if (document.getElementById('image-upload').style.backgroundImage) {
     imageID = saveImageToLocalStorage(document.getElementById('image-upload').dataset.imageurl, valueOrPlaceholder('plantName'));
+    imageID = `data:image/png;base64,${ localStorage.getItem(imageID) }`;
   }
 
   return {
