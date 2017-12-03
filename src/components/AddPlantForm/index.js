@@ -73,7 +73,7 @@ export class AddPlantForm extends React.Component {
           label="Toxic to"
           options={[ "Cats", "Dogs", "Humans" ]}
         />
-        <fieldset className="add-plant-fieldset">
+        <fieldset className="add-plant-fieldset button-wrap">
           <Button
             type={ BUTTON_TYPES.POSITIVE }
             content={ "Add Plant" }

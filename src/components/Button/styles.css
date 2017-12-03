@@ -10,7 +10,7 @@
     color: var(--text);
     transition-property: box-shadow transform;
     transition-duration: 0.2s;
-    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .button:hover, .button:focus {
