@@ -34,6 +34,6 @@ export class Plant extends React.Component {
 
 Plant.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 };
