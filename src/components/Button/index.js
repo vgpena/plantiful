@@ -14,6 +14,7 @@ export class Button extends React.Component {
     return (
       <button
         className={ this.props.type || BUTTON_TYPES.DEFAULT }
+        onClick={ this.props.function }
       >
         { this.props.content }
       </button>
@@ -22,6 +23,8 @@ export class Button extends React.Component {
 }
 
 Button.propTypes = {
-  content: PropTypes.string,
+  content: PropTypes.string.isRequired,
   type: PropTypes.oneOf(Object.values(BUTTON_TYPES)),
+  function: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
 };

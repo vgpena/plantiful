@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
 import { Button, BUTTON_TYPES } from './';
 
@@ -9,6 +10,7 @@ stories.add('default', () => {
   return (
     <Button
       content={ "Button" }
+      function={ action("clicked default button") }
     />
   );
 });
@@ -18,6 +20,7 @@ stories.add('positive', () => {
     <Button
       type={ BUTTON_TYPES.POSITIVE }
       content={ "Save Plant" }
+      function={ action("clicked positive button") }      
     />
   );
 });
@@ -27,15 +30,17 @@ stories.add('danger', () => {
     <Button
       type={ BUTTON_TYPES.DANGER }
       content={ "Remove Plant" }
+      function={ action("clicked danger button") }      
     />
   );
 });
 
-stories.add('function', () => {
+stories.add('functional', () => {
   return (
     <Button
       type={ BUTTON_TYPES.FUNCTION }
       content={ "Download Plants List" }
+      function={ action("clicked functional button") }      
     />
   );
 });
