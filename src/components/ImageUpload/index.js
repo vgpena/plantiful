@@ -57,9 +57,11 @@ export class ImageUpload extends React.Component {
   render() {
     return (
       <div
+        id="image-upload"
         className="image-drag-and-drop"
         ref={ (area) => { this.dragArea = area; } }
         style={ this.state.imageUrl && { 'backgroundImage': `url(${ this.state.imageUrl })` }}
+        data-imageurl={ this.state.imageUrl }
       >
         { !this.state.hasImage && (this.state.isActive ? "Drop image" : "Drag image here") }
       </div>

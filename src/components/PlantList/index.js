@@ -18,7 +18,6 @@ export class PlantList extends React.Component {
       <ul className="plant-list">
         {
           this.props.plants.map((plant) => {
-            console.log(plant);
             return (
               <li key={ plant.name } className="plant-list-item">
                 <Plant { ...plant } />

@@ -5,6 +5,7 @@ import './styles.css';
 import { TextInput } from '../TextInput';
 import { DropdownInput } from '../DropdownInput';
 import { Checkboxes } from '../Checkboxes';
+import { ImageUpload } from '../ImageUpload';
 import { Button, BUTTON_TYPES } from '../Button';
 
 function boxIsChecked(id) {
@@ -25,25 +26,41 @@ function valueOrPlaceholder(id) {
   return val.length ? val : "???";
 }
 
-export class AddPlantForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.serializeForm = this.serializeForm.bind(this);
+function saveImageToLocalStorage(url, prefix) {
+  const canvas = document.createElement('canvas');
+  const img = new Image();
+  img.src = url;
+  canvas.width = img.width;
+  canvas.height = img.height;
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(img, 0, 0);
+  const dataURL = canvas.toDataURL("image/png");
+  const saveableData = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+  const fileName = `plantiful-${ prefix }-${ Date() }`;
+  localStorage.setItem(fileName, saveableData);
+  return fileName;
+}
+
+function serializeForm() {
+  let imageID = null;
+  if (document.getElementById('image-upload').style.backgroundImage) {
+    imageID = saveImageToLocalStorage(document.getElementById('image-upload').dataset.imageurl, valueOrPlaceholder('plantName'));
   }
 
-  serializeForm() {
-    return {
-      'name': valueOrPlaceholder('plantName'),
-      'stats': [
-        ['location', valueOrPlaceholder('plantLocation')],
-        ['water', valueOrPlaceholder('plantWater')],
-        ['light', valueOrPlaceholder('plantLight')],
-        ['fertilize', valueOrPlaceholder('plantFertilize')],
-        ['toxic to', getToxic()],
-      ],
-    };
-  }
-  
+  return {
+    'name': valueOrPlaceholder('plantName'),
+    'image': imageID,
+    'stats': [
+      ['location', valueOrPlaceholder('plantLocation')],
+      ['water', valueOrPlaceholder('plantWater')],
+      ['light', valueOrPlaceholder('plantLight')],
+      ['fertilize', valueOrPlaceholder('plantFertilize')],
+      ['toxic to', getToxic()],
+    ],
+  };
+}
+
+export class AddPlantForm extends React.Component {
   render() {
     return (
       <form>
@@ -73,11 +90,12 @@ export class AddPlantForm extends React.Component {
           label="Toxic to"
           options={[ "Cats", "Dogs", "Humans" ]}
         />
+        <ImageUpload />
         <fieldset className="add-plant-fieldset button-wrap">
           <Button
             type={ BUTTON_TYPES.POSITIVE }
             content={ "Add Plant" }
-            function={ () => this.props.saveFunction(this.serializeForm()) }
+            function={ () => this.props.saveFunction(serializeForm()) }
           />
           <Button
             type={ BUTTON_TYPES.DANGER }
