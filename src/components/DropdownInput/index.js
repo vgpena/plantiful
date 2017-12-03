@@ -5,7 +5,7 @@ import './styles.css';
 export class DropdownInput extends React.Component {
   render() {
     return (
-      <div>
+      <div className="dropdown-input-wrap">
         <label htmlFor={ this.props.name } className="label-dropdown">
           { this.props.label }
         </label>

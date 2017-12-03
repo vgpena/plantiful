@@ -1,18 +1,24 @@
 .fieldset {
     border: 0px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
 .legend {
     font-size: 1rem;
     font-family: var(--titles);
     color: var(--text);
+    float: left;
+    margin-right: 1em;
+}
+
+.checkboxes-wrap {
+    float: left;
 }
 
 .checkbox-wrap {
-    display: inline-block;
-    margin-right: 1rem;
+    /* display: inline-block;
+    margin-right: 1rem; */
 }
 
 .label-checkbox {

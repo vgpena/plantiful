@@ -20,3 +20,18 @@ stories.add('default', () => {
     />
   );
 });
+
+stories.add('no photo', () => {
+  return (
+    <Plant
+      name="Plant"
+      stats={[
+        [ 'location', 'living room' ],
+        [ 'sun', 'full' ],
+        [ 'water', 'once per week' ],
+        [ 'fertilize', 'twice per year' ],
+        [ 'toxic to', 'cats, dogs' ],
+      ]}
+    />
+  );
+});

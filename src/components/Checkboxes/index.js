@@ -9,18 +9,20 @@ export class Checkboxes extends React.Component {
         <legend className="legend">
           { this.props.label }
         </legend>
-        {
-          this.props.options.map((option) => {
-            return (
-              <div className="checkbox-wrap">
-                <label for={ option } className="label-checkbox">
-                  { option }
-                </label>
-                <input type="checkbox" value={ option } id={ option } />
-              </div>
-            )
-          })
-        }
+        <div className="checkboxes-wrap">
+          {
+            this.props.options.map((option) => {
+              return (
+                <div className="checkbox-wrap">
+                  <label for={ option } className="label-checkbox">
+                    { option }
+                  </label>
+                  <input type="checkbox" value={ option } id={ option } />
+                </div>
+              )
+            })
+          }
+        </div>
       </fieldset>
     );
   }

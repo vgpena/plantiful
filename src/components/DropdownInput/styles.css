@@ -1,3 +1,7 @@
+.dropdown-input-wrap {
+    margin-bottom: 2em;
+}
+
 .label-dropdown {
     font-family: var(--titles);
     color: var(--text);

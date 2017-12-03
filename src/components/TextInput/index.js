@@ -5,7 +5,7 @@ import './styles.css';
 export class TextInput extends React.Component {
   render() {
     return (
-      <div>
+      <div className="text-input-wrap">
         <label htmlFor={ this.props.name } className="label-text">
           { this.props.label }
         </label>

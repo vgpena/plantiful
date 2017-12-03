@@ -1,3 +1,7 @@
+.text-input-wrap {
+    margin-bottom: 2em;
+}
+
 .label-text, .input-text {
     display: block;
     color: var(--text);
