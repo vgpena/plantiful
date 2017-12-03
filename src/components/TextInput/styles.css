@@ -1,0 +1,16 @@
+.label-text, .input-text {
+    display: block;
+    color: var(--text);
+}
+
+.label-text {
+    font-family: var(--titles);
+    font-size: 1rem;
+}
+
+.input-text {
+    font-family: var(--body);
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: solid 3px var(--text);
+}

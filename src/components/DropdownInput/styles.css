@@ -1,0 +1,10 @@
+.label-dropdown {
+    font-family: var(--titles);
+    color: var(--text);
+    font-size: 1rem;
+    margin-right: 0.5em;
+}
+
+.input-dropdown {
+    font-size: 1rem;
+}
