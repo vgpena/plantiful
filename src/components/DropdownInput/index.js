@@ -12,7 +12,7 @@ export class DropdownInput extends React.Component {
           {
             this.props.choices.map((choice) => {
               return (
-                <option value={ choice }>
+                <option value={ choice } key={ choice }>
                   { choice }
                 </option>
               )

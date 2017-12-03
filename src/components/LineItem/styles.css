@@ -1,0 +1,12 @@
+.lineitem {
+    font-family: var(--body);
+    color: var(--text);
+}
+
+.lineitem-name, .lineitem-value {
+    padding: 0.5em;
+}
+
+.lineitem-name {
+    font-weight: bold;
+}
