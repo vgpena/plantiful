@@ -1,0 +1,6 @@
+.site-title {
+    font-family: "Lydian";
+    font-weight: normal;
+    color: var(--text);
+    font-size: 4rem;
+}
