@@ -2,6 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
+import { action } from '@storybook/addon-actions';
+
 import { TextInput } from '../TextInput';
 import { DropdownInput } from '../DropdownInput';
 import { Checkboxes } from '../Checkboxes';
@@ -41,10 +43,12 @@ export class AddPlantForm extends React.Component {
           <Button
             type={ BUTTON_TYPES.POSITIVE }
             content={ "Add Plant" }
+            function={ action("Save plant and leave editing mode") }
           />
           <Button
             type={ BUTTON_TYPES.DANGER }
             content="Never Mind"
+            function={ action("Clear form and leave editing mode") }
           />
         </fieldset>
       </form>

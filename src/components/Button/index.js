@@ -13,6 +13,7 @@ export class Button extends React.Component {
   render() {
     return (
       <button
+        type="button"
         className={ this.props.type || BUTTON_TYPES.DEFAULT }
         onClick={ this.props.function }
       >
