@@ -2,14 +2,41 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-import { action } from '@storybook/addon-actions';
-
 import { TextInput } from '../TextInput';
 import { DropdownInput } from '../DropdownInput';
 import { Checkboxes } from '../Checkboxes';
 import { Button, BUTTON_TYPES } from '../Button';
 
+function boxIsChecked(id) {
+  return document.getElementById(id).checked;
+}
+
 export class AddPlantForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.serializeForm = this.serializeForm.bind(this);
+  }
+
+  getToxic() {
+    const toxicTo = [ "Cats", "Dogs", "Humans" ].filter(boxIsChecked);
+    if (!toxicTo.length) {
+      return "N/A";
+    }
+
+    return toxicTo.join(', ');
+  }
+
+  serializeForm() {
+    return {
+      'name': document.getElementById('plantName').value,
+      'location': document.getElementById('plantLocation').value, 
+      'water': document.getElementById('plantWater').value, 
+      'light': document.getElementById('plantLight').value,       
+      'fertilize': document.getElementById('plantFertilize').value,       
+      'toxic to': this.getToxic(),       
+    };
+  }
+  
   render() {
     return (
       <form>
@@ -31,7 +58,7 @@ export class AddPlantForm extends React.Component {
           choices={[ "Full Sun", "Partial Sun", "Shade Tolerant" ]}
         />
         <TextInput
-          name="plantfertilize"
+          name="plantFertilize"
           label="Fertilize"
         />
         <Checkboxes
@@ -43,12 +70,12 @@ export class AddPlantForm extends React.Component {
           <Button
             type={ BUTTON_TYPES.POSITIVE }
             content={ "Add Plant" }
-            function={ action("Save plant and leave editing mode") }
+            function={ () => this.props.saveFunction(this.serializeForm()) }
           />
           <Button
             type={ BUTTON_TYPES.DANGER }
             content="Never Mind"
-            function={ action("Clear form and leave editing mode") }
+            function={ this.props.dontSaveFunction }
           />
         </fieldset>
       </form>
@@ -57,5 +84,6 @@ export class AddPlantForm extends React.Component {
 }
 
 AddPlantForm.propTypes = {
-  name: PropTypes.string,
+  saveFunction: PropTypes.func.isRequired,
+  dontSaveFunction: PropTypes.func.isRequired,
 };
