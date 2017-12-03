@@ -8,8 +8,8 @@ function loadStories() {
 };
 
 setOptions({
-  name: '1337 Storybook',
-  url: 'https://alert-oriole.glitch.me',
+  name: 'plantiful',
+  url: 'https://plantiful.glitch.me',
   downPanelInRight: true,
 });
 
