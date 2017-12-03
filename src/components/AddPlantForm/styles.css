@@ -1,5 +1,3 @@
-.AddPlantForm {
-    font-family: "Comic Sans", "Chalkboard", cursive;
-    color: #ff1cba;
-    font-size: 24px;
+.add-plant-fieldset {
+    border: 0px;
 }

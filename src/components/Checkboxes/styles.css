@@ -16,11 +16,6 @@
     float: left;
 }
 
-.checkbox-wrap {
-    /* display: inline-block;
-    margin-right: 1rem; */
-}
-
 .label-checkbox {
     font-family: var(--body);
     margin-right: 0.25em;

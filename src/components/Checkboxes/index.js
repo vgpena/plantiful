@@ -13,7 +13,7 @@ export class Checkboxes extends React.Component {
           {
             this.props.options.map((option) => {
               return (
-                <div className="checkbox-wrap">
+                <div>
                   <label for={ option } className="label-checkbox">
                     { option }
                   </label>

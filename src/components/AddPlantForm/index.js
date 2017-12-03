@@ -5,6 +5,7 @@ import './styles.css';
 import { TextInput } from '../TextInput';
 import { DropdownInput } from '../DropdownInput';
 import { Checkboxes } from '../Checkboxes';
+import { Button, BUTTON_TYPES } from '../Button';
 
 export class AddPlantForm extends React.Component {
   render() {
@@ -36,6 +37,16 @@ export class AddPlantForm extends React.Component {
           label="Toxic to"
           options={[ "Cats", "Dogs", "Humans" ]}
         />
+        <fieldset className="add-plant-fieldset">
+          <Button
+            type={ BUTTON_TYPES.POSITIVE }
+            content={ "Add Plant" }
+          />
+          <Button
+            type={ BUTTON_TYPES.DANGER }
+            content="Never Mind"
+          />
+        </fieldset>
       </form>
     );
   }
