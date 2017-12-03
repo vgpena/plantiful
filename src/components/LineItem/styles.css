@@ -5,6 +5,7 @@
 
 .lineitem-name, .lineitem-value {
     padding: 0.5em;
+    vertical-align: top;
 }
 
 .lineitem-name {

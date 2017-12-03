@@ -22,6 +22,14 @@ export class DynamicList extends React.Component {
     }
   }
 
+  componentWillMount() {
+    localStorage.clear();    
+  }
+
+  componentWillUnmount() {
+    localStorage.clear();
+  }
+
   addPlant() {
     this.setState({
       editing: true,
@@ -45,6 +53,7 @@ export class DynamicList extends React.Component {
   }
 
   clearList() {
+    localStorage.clear();
     this.setState({
       hasPlants: false,
       plants: [],

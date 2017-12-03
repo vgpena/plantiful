@@ -10,6 +10,8 @@ html {
     --titles: "Lydian", "Georgia", serif;
     --body: "Fira Mono", monospace;
     --util: "Helvetica Neue", "Arial", sans-serif;
+    --img-dim: 10rem;
+    --stat-dim: 19rem;
     background-color: var(--background);
 }
 

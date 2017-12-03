@@ -1,6 +1,6 @@
 .plant-image {
-    width: 200px;
-    height: 200px;
+    width: var(--img-dim);
+    height: var(--img-dim);
     background-size: cover;
     background-position: center;
     display: inline-block;

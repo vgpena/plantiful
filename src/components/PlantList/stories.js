@@ -13,7 +13,7 @@ stories.add('default', () => {
           name: "Plant 1",
           image: "https://www.placecage.com/700/703",
           stats: [
-            [ 'location', 'living room' ],
+            [ 'location', 'living room, by window' ],
             [ 'sun', 'full' ],
             [ 'water', 'once per week' ],
             [ 'fertilize', 'twice per year' ],
