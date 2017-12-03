@@ -1,0 +1,21 @@
+.fieldset {
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.legend {
+    font-size: 1rem;
+    font-family: var(--titles);
+    color: var(--text);
+}
+
+.checkbox-wrap {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.label-checkbox {
+    font-family: var(--body);
+    margin-right: 0.25em;
+}
