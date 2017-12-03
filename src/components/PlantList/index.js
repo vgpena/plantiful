@@ -7,12 +7,12 @@ import { Plant } from '../Plant';
 export class PlantList extends React.Component {
   render() {
     return (
-      <ul>
+      <ul className="plant-list">
         {
           this.props.plants.map((plant) => {
             console.log(plant);
             return (
-              <li key={ plant.name }>
+              <li key={ plant.name } className="plant-list-item">
                 <Plant { ...plant } />
               </li>
             );

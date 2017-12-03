@@ -1,5 +1,8 @@
-.PlantList {
-    font-family: "Comic Sans", "Chalkboard", cursive;
-    color: #ff1cba;
-    font-size: 24px;
+.plant-list {
+    margin: 0;
+    padding: 0;
+}
+
+.plant-list-item {
+    list-style-type: none;
 }
