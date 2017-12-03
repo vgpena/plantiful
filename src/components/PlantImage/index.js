@@ -5,7 +5,7 @@ import './styles.css';
 export class PlantImage extends React.Component {
   render() {
     return (
-      <div className="plant-image" style={{ 'backgroundImage': `url(${ this.props.imageUrl })` }} />
+      <div className="plant-image" style={ this.props.imageUrl && { 'backgroundImage': `url(${ this.props.imageUrl })` }} />
     );
   }
 }
