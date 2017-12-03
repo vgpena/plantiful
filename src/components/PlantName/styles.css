@@ -1,0 +1,6 @@
+.plant-name {
+    font-family: var(--titles);
+    color: var(--text);
+    font-weight: normal;
+    font-size: 2rem;
+}
