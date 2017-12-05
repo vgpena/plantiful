@@ -8,14 +8,14 @@ const stories = storiesOf('Plant', {});
 stories.add('default', () => {
   return (
     <Plant
-      name="Plant"
-      image="https://www.placecage.com/700/702"
+      name="Cymbidium Orchid"
+      image="https://www.orchidweb.com/images/cymbidium_orchid_plant.jpg"
       stats={[
-        [ 'location', 'living room' ],
-        [ 'sun', 'full' ],
-        [ 'water', 'once per week' ],
-        [ 'fertilize', 'twice per year' ],
-        [ 'toxic to', 'cats, dogs' ],
+        [ 'location', 'living room by window' ],
+        [ 'light', 'full sun' ],
+        [ 'water', 'once every 2-3 days' ],
+        [ 'fertilize', 'once every 2 weeks' ],
+        [ 'toxic to', 'dogs' ],
       ]}
     />
   );

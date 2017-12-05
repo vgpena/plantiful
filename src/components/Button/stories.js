@@ -1,15 +1,17 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import { Button, BUTTON_TYPES } from './';
 
 const stories = storiesOf('Button', {});
+stories.addDecorator(withKnobs);
 
 stories.add('default', () => {
   return (
     <Button
-      content={ "Button" }
+      content={ text("Content", "Button") }
       function={ action("clicked default button") }
     />
   );

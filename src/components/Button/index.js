@@ -27,5 +27,4 @@ Button.propTypes = {
   content: PropTypes.string.isRequired,
   type: PropTypes.oneOf(Object.values(BUTTON_TYPES)),
   function: PropTypes.func.isRequired,
-  disabled: PropTypes.bool,
 };
