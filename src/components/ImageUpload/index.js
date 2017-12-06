@@ -2,11 +2,9 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-export class ImageUpload extends React.Component {
+export class ImageUpload extends React.Component {  
   constructor(props) {
     super(props);
-
-    this.dragArea = HTMLDivElement;
 
     this.state = {
       isActive: false,
@@ -16,32 +14,34 @@ export class ImageUpload extends React.Component {
   }
 
   componentDidMount() {
-    this.dragArea.ondragenter = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      this.setState({
-        isActive: true,
-      });
-    }
-
-    this.dragArea.ondragleave = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      this.setState({
-        isActive: false,
-      });
-    }
-
-    this.dragArea.ondragover = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-    }
-
-    this.dragArea.ondrop = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      this.uploadAndPreviewImage(e);
-    }
+    setTimeout(() => {
+      this.dragArea.ondragenter = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.setState({
+          isActive: true,
+        });
+      }
+  
+      this.dragArea.ondragleave = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.setState({
+          isActive: false,
+        });
+      }
+  
+      this.dragArea.ondragover = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+      }
+  
+      this.dragArea.ondrop = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.uploadAndPreviewImage(e);
+      }
+    }, 0);
   }
 
   uploadAndPreviewImage(e) {
