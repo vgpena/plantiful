@@ -1,0 +1,588 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button danger 1`] = `
+<button
+  className="button button-remove"
+  onClick={[Function]}
+  type="button"
+>
+  Remove Plant
+</button>
+`;
+
+exports[`Storyshots Button default 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Button functional 1`] = `
+<button
+  className="button button-download"
+  onClick={[Function]}
+  type="button"
+>
+  Download Plants List
+</button>
+`;
+
+exports[`Storyshots Button positive 1`] = `
+<button
+  className="button button-save"
+  onClick={[Function]}
+  type="button"
+>
+  Save Plant
+</button>
+`;
+
+exports[`Storyshots Checkboxes default 1`] = `
+<fieldset
+  className="fieldset"
+>
+  <legend
+    className="legend"
+  >
+    Toxic to
+  </legend>
+  <div
+    className="checkboxes-wrap"
+  >
+    <div>
+      <label
+        className="label-checkbox"
+        htmlFor="humans"
+      >
+        humans
+      </label>
+      <input
+        id="humans"
+        type="checkbox"
+        value="humans"
+      />
+    </div>
+    <div>
+      <label
+        className="label-checkbox"
+        htmlFor="cats"
+      >
+        cats
+      </label>
+      <input
+        id="cats"
+        type="checkbox"
+        value="cats"
+      />
+    </div>
+    <div>
+      <label
+        className="label-checkbox"
+        htmlFor="dogs"
+      >
+        dogs
+      </label>
+      <input
+        id="dogs"
+        type="checkbox"
+        value="dogs"
+      />
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`Storyshots DropdownInput default 1`] = `
+<div
+  className="dropdown-input-wrap"
+>
+  <label
+    className="label-dropdown"
+    htmlFor="dropdown"
+  >
+    Light Level
+  </label>
+  <select
+    className="input-dropdown"
+    id="dropdown"
+    name="dropdown"
+  >
+    <option
+      value="full sun"
+    >
+      full sun
+    </option>
+    <option
+      value="partial sun"
+    >
+      partial sun
+    </option>
+    <option
+      value="shade tolerant"
+    >
+      shade tolerant
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Storyshots LineItem default 1`] = `
+<tr
+  className="lineitem"
+>
+  <td
+    className="lineitem-name"
+  >
+    fertilize
+  </td>
+  <td
+    className="lineitem-value"
+  >
+    every 7-10 days
+  </td>
+</tr>
+`;
+
+exports[`Storyshots Plant default 1`] = `
+<div>
+  <h2
+    className="plant-name"
+  >
+    Cymbidium Orchid
+  </h2>
+  <div
+    className="plant-image"
+    style={
+      Object {
+        "backgroundImage": "url(https://www.orchidweb.com/images/cymbidium_orchid_plant.jpg)",
+      }
+    }
+  />
+  <table
+    className="plant-stats"
+  >
+    <tbody>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          location
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          living room by window
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          light
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          full sun
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          water
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          once every 2-3 days
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          fertilize
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          once every 2 weeks
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          toxic to
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          dogs
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Plant no photo 1`] = `
+<div>
+  <h2
+    className="plant-name"
+  >
+    Plant
+  </h2>
+  <div
+    className="plant-image"
+    style={undefined}
+  />
+  <table
+    className="plant-stats"
+  >
+    <tbody>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          location
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          living room
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          sun
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          full
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          water
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          once per week
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          fertilize
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          twice per year
+        </td>
+      </tr>
+      <tr
+        className="lineitem"
+      >
+        <td
+          className="lineitem-name"
+        >
+          toxic to
+        </td>
+        <td
+          className="lineitem-value"
+        >
+          cats, dogs
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots PlantImage default 1`] = `
+<div
+  className="plant-image"
+  style={
+    Object {
+      "backgroundImage": "url(https://www.placecage.com/700/700)",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots PlantImage no photo 1`] = `
+<div
+  className="plant-image"
+  style={undefined}
+/>
+`;
+
+exports[`Storyshots PlantList default 1`] = `
+<ul
+  className="plant-list"
+>
+  <li
+    className="plant-list-item"
+  >
+    <div>
+      <h2
+        className="plant-name"
+      >
+        Plant 1
+      </h2>
+      <div
+        className="plant-image"
+        style={
+          Object {
+            "backgroundImage": "url(https://www.placecage.com/700/703)",
+          }
+        }
+      />
+      <table
+        className="plant-stats"
+      >
+        <tbody>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              location
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              living room, by window
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              sun
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              full
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              water
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              once per week
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              fertilize
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              twice per year
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              toxic to
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              cats, dogs
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </li>
+  <li
+    className="plant-list-item"
+  >
+    <div>
+      <h2
+        className="plant-name"
+      >
+        Plant 2
+      </h2>
+      <div
+        className="plant-image"
+        style={
+          Object {
+            "backgroundImage": "url(https://www.placecage.com/700/704)",
+          }
+        }
+      />
+      <table
+        className="plant-stats"
+      >
+        <tbody>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              location
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              bedroom
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              sun
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              full
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              water
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              once per week
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              fertilize
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              twice per year
+            </td>
+          </tr>
+          <tr
+            className="lineitem"
+          >
+            <td
+              className="lineitem-name"
+            >
+              toxic to
+            </td>
+            <td
+              className="lineitem-value"
+            >
+              cats, dogs
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots PlantList empty 1`] = `
+<p
+  className="plant-list-empty"
+>
+  No plants yet. Click the button below to add some!
+</p>
+`;
+
+exports[`Storyshots PlantName default 1`] = `
+<h2
+  className="plant-name"
+>
+  Cymbidium Orchid
+</h2>
+`;
+
+exports[`Storyshots SiteTitle default 1`] = `
+<h1
+  className="site-title"
+>
+  Plantiful
+</h1>
+`;
+
+exports[`Storyshots TextInput default 1`] = `
+<div
+  className="text-input-wrap"
+>
+  <label
+    className="label-text"
+    htmlFor="TextInput"
+  >
+    Test Label
+  </label>
+  <input
+    className="input-text"
+    id="TextInput"
+    type="text"
+  />
+</div>
+`;
