@@ -6,6 +6,8 @@ export class ImageUpload extends React.Component {
   constructor(props) {
     super(props);
 
+    this.dragArea = HTMLDivElement;
+
     this.state = {
       isActive: false,
       hasImage: false,

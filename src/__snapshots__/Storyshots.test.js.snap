@@ -1,5 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Body default 1`] = `
+<div
+  className="app"
+>
+  <h1
+    className="site-title"
+  >
+    Plantiful
+  </h1>
+  <div>
+    <p
+      className="plant-list-empty"
+    >
+      No plants yet. Click the button below to add some!
+    </p>
+    <div
+      className="button-wrap hide-in-print"
+    >
+      <button
+        className="button button-save"
+        onClick={[Function]}
+        type="button"
+      >
+        Add Plant
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button danger 1`] = `
 <button
   className="button button-remove"
@@ -126,6 +156,27 @@ exports[`Storyshots DropdownInput default 1`] = `
       shade tolerant
     </option>
   </select>
+</div>
+`;
+
+exports[`Storyshots DynamicList default 1`] = `
+<div>
+  <p
+    className="plant-list-empty"
+  >
+    No plants yet. Click the button below to add some!
+  </p>
+  <div
+    className="button-wrap hide-in-print"
+  >
+    <button
+      className="button button-save"
+      onClick={[Function]}
+      type="button"
+    >
+      Add Plant
+    </button>
+  </div>
 </div>
 `;
 
